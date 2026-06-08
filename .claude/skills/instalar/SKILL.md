@@ -96,7 +96,9 @@ Se o usuário forneceu cores/fontes/logo (perguntas 9-10), preencher os campos c
 > "Deixei o `identidade/design-guide.md` em branco. Sempre que você definir uma identidade visual, edita lá — as skills de carrossel, proposta e slide leem esse arquivo antes de criar qualquer visual."
 
 ### `CLAUDE.md`
-Pegar o template correspondente ao perfil escolhido na Fase 1 (`templates/perfis/claude-md-<perfil>.md`), adaptar com o nome do negócio e estrutura de pastas mencionada nas respostas, e sobrescrever o `CLAUDE.md` da raiz.
+**NUNCA sobrescrever o `CLAUDE.md` inteiro.** Ele contém as regras universais do MazyOS que NÃO podem se perder: roteamento de skills pela intenção, regra das duas marcas (cliente × Surge), o bloco "Arsenal global instalado" + regra anti-conflito, aprender com correções, manter contexto, organização de pastas e criação de skills.
+
+Em vez disso, **complementar no FINAL** (é o que o cabeçalho do próprio `CLAUDE.md` manda): pegar o template do perfil escolhido na Fase 1 (`templates/perfis/claude-md-<perfil>.md`), adaptar com o nome do negócio e a estrutura de pastas das respostas, e **anexar ao fim** do `CLAUDE.md` existente, sob um separador claro (ex: `\n---\n\n# Contexto específico — <Nome>\n`). Assim o cérebro universal + o conhecimento de todas as skills permanecem intactos, e só se acrescenta o contexto do cliente.
 
 ---
 
