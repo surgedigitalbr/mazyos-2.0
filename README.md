@@ -4,8 +4,10 @@
 
 Você acaba de instalar o MazyOS. Em alguns minutos, o projeto vai ter uma
 memória própria, a identidade visual aplicada em tudo que o sistema gerar,
-e 23 skills prontas pra fazer design, copy, marketing, SEO, ads, propostas
-e operação rodarem com você dirigindo.
+e **47 skills** prontas — 23 da operação MazyOS (design, copy, marketing,
+SEO, ads, propostas) **+ um arsenal de craft** que elas puxam sozinhas
+(design premium, backend, pagamento, documentos, QA) — pra tudo rodar com
+você dirigindo.
 
 Bora voar.
 
@@ -25,9 +27,10 @@ iniciativa, você cria uma pasta com o nome dele e instala o MazyOS na raiz.
 Clona o https://github.com/surgedigitalbr/mazyos-2.0.git na raiz dessa pasta e roda o /instalar.
 ```
 
-Clonar **na raiz** é o que faz todas as 23 skills funcionarem — tanto no
+Clonar **na raiz** é o que faz todas as 47 skills funcionarem — tanto no
 modo manual (`/design`, `/seo`, `/proposta`...) quanto no roteamento
-automático (você só descreve o que quer e ele aciona a skill certa).
+automático (você só descreve o que quer e ele aciona a skill certa). O molde
+já vem **completo**: clonou, tem tudo — em qualquer máquina.
 
 ### Pelo terminal (mais previsível)
 
@@ -51,11 +54,15 @@ disso, é só conversar e construir.
 
 ---
 
-## O sistema — 23 skills
+## O sistema — as 23 skills MazyOS (a linha de frente)
 
 **Você não decora comando.** Conversa. Descreve o que quer e o MazyOS
 aciona o que precisa (às vezes várias skills juntas). Os `/comandos`
 abaixo são atalho opcional. Rode `/ajuda` a qualquer momento pra ver tudo.
+
+> Essas 23 são a **porta de entrada** de toda entrega: carregam a marca do
+> cliente, o contexto do negócio e a regra das duas identidades. Por baixo
+> delas roda o **arsenal de craft** (mais abaixo), que elas puxam sozinhas.
 
 **Núcleo** — operar o dia a dia
 `/abrir` carrega o contexto e diz onde paramos · `/atualizar` varre o
@@ -96,6 +103,37 @@ formato cardápio, com capa, pronta pra mandar no WhatsApp.
 
 ---
 
+## O arsenal — +24 skills de craft que o sistema puxa sozinho
+
+As 23 acima são a linha de frente. Por baixo delas roda um **arsenal de
+execução** que elas acionam automaticamente conforme a tarefa pede — você
+nunca precisa chamar. São **47 skills no total**, e tudo vem no clone.
+
+**Craft de design/front** (o `/design` orquestra) — `impeccable` (build
+premium + auditoria, 23 comandos e detector anti-IA), `taste-skill`
+(anti-genérico), `redesign-skill` (subir site existente pra nível premium),
+`soft-skill` (cara de agência cara), `gpt-tasteskill` (efeitos e motion GSAP
+fortes), `brutalist-skill`, `minimalist-skill`, `image-to-code-skill` (ver o
+design antes de construir), `imagegen-frontend-web` / `-mobile` (referência
+visual por seção), `brandkit` (identidade e deck de marca), `output-skill`
+(código longo sem truncar).
+
+**Capacidade de produto** (SaaS, micro-SaaS, loja) — `supabase` (auth, banco,
+storage), `supabase-postgres-best-practices` (query, RLS, schema, índices),
+`stripe-best-practices` (pagamento e checkout), `vercel-react-best-practices`
+(performance React/Next), `playwright-cli` (QA do site antes de subir).
+
+**Documentos** — `pdf`, `docx`, `pptx` pra proposta, contrato, ebook e slides.
+**Meta** — `skill-creator` (criar e evoluir as próprias skills do MazyOS),
+`find-skills`, `baoyu-youtube-transcript`.
+
+> Regra de ouro: skill de craft **nunca** decide marca, cor ou identidade —
+> quem manda é sempre o `design-guide.md` do cliente. E skill genérica de
+> copy/imagem/vídeo nunca substitui `/copy`, `/gerar-imagem` ou `/reels`,
+> que carregam o contexto do negócio.
+
+---
+
 ## A tese
 
 IA não é uma ferramenta que sua empresa usa. É o sistema operacional em
@@ -124,6 +162,11 @@ lê isso antes de cada resposta. Quanto melhor a memória, melhor o sistema.
 `marketing/`, `saidas/` e `scripts/` são o resultado. O sistema produz,
 **organiza tudo em pastas** (sem bagunça, sem duplicata), versiona no seu
 GitHub e fica tudo seu.
+
+**Segredos ficam de fora.** Chave de API, token e credencial (Supabase,
+Stripe, Meta, Google…) são de cada cliente e moram só no `.env` local — o
+`.gitignore` já bloqueia. Vai pro repo só um `.env.example` com os nomes das
+variáveis; os valores reais entram nas variáveis de ambiente da Vercel.
 
 ---
 
