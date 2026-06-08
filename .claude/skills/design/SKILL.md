@@ -22,6 +22,7 @@ A skill que garante que tudo que a Surge entrega pareça **feito à mão por um 
 - **Copy:** quando a tela tiver texto de venda, acionar `/copy` em vez de inventar texto solto.
 - **Imagem:** fotos/ilustrações/logo via `/gerar-imagem`.
 - **Deploy:** ao terminar, `/deploy` sobe na Vercel.
+- **Arsenal de craft (skills globais):** esta skill é a **orquestradora** — define direção, marca e contexto. A execução visual fina puxa a skill de craft certa (ver "Arsenal de craft" abaixo). Sempre passar a marca do cliente + o `DESIGN.md` pra elas; nunca deixar a skill de craft escolher cor/identidade sozinha.
 
 ---
 
@@ -58,6 +59,25 @@ Banir, sempre:
 - **Fundo = atmosfera:** grão/noise, mesh gradient, padrão geométrico, transparências em camada, sombra dramática — nunca preenchimento chapado.
 - **Motion com intenção:** **um** carregamento de página bem orquestrado (revelação em cascata com `animation-delay`) entrega mais do que micro-interação espalhada. Animar só `transform`/`opacity`. Preferir CSS scroll-driven (`animation-timeline: scroll()/view()`) e View Transitions API antes de puxar JS; GSAP + ScrollTrigger só pra timeline complexa.
 - **Complexidade casada com a visão:** maximalista → animação elaborada; minimalista → precisão obsessiva de espaço e tipo.
+
+## Arsenal de craft (skills globais — puxar a certa pelo caso)
+
+A direção e a marca saem desta skill; a **execução fina** delega pra uma skill de craft global já instalada. Não montar "na mão" o que uma dessas faz melhor. **Escolher pela necessidade** (combinam entre si — ex: gerar referência → construir → revisar):
+
+- **`impeccable`** — o cavalo de batalha. Construir/redesenhar/polir qualquer interface premium, dashboard, app, landing, componente. Default da maioria das entregas de front.
+- **`taste-skill`** — landing page / portfólio / redesign anti-genérico, com check pré-voo. Quando o medo é "ficar com cara de template".
+- **`redesign-skill`** — subir um site/app **existente** pra nível premium sem quebrar função. Usar quando o cliente já tem site.
+- **`soft-skill`** — quando precisa parecer **caro/agência de ponta**: fontes, espaçamento, sombras, cards e animações que passam valor; bloqueia os defaults baratos.
+- **`gpt-tasteskill`** — **efeitos e motion fortes**: GSAP ScrollTrigger (pin, stack, scrub), tipografia editorial larga, bento gaplessm, micro-imagens inline. Pros sites "mais fodas com efeitos lindos".
+- **`brutalist-skill`** — família brutalista/Swiss/terminal (tech, dev tool, marca ousada).
+- **`minimalist-skill`** — família editorial limpa, monocromático quente, sem gradiente/sombra pesada.
+- **`image-to-code-skill`** — quando vale **ver antes de construir**: gera a imagem do design, analisa e implementa batendo com ela. Bom pra tarefa visualmente crítica.
+- **`imagegen-frontend-web`** — gerar **referência visual por seção** (1 imagem por seção) antes de codar a landing/site.
+- **`imagegen-frontend-mobile`** — conceito de telas de **app mobile** (iOS/Android) em mockup.
+- **`brandkit`** — board de **identidade/brand guidelines**, sistema de logo, deck de marca.
+- **`output-skill`** — ligar em **código longo** pra não truncar (página inteira, muitos componentes).
+
+Mapa rápido família estética → skill: *minimalismo refinado* → `minimalist-skill`/`soft-skill`; *brutalismo* → `brutalist-skill`; *maximalismo + efeito* → `gpt-tasteskill`; *redesign de site existente* → `redesign-skill`; *qualquer build premium* → `impeccable` (+ `taste-skill` no pré-voo). Sempre alimentar a skill de craft com a paleta OKLCH do cliente e o `DESIGN.md` — a marca é nossa, o craft é delas.
 
 ## Paleta a partir da logo (OKLCH)
 
@@ -103,6 +123,8 @@ Codar no stack escolhido aplicando os tokens. Texto de venda vem do `/copy` (nã
 
 ### Passo 4 — Revisão
 Rodar uma passada de revisão visual + acessibilidade (Playwright/`/webapp-testing` quando disponível): layout em mobile e desktop, contraste, estados (hover/focus/empty/erro). Conferir contra a lista de PROIBIDO — se caiu em qualquer fingerprint de IA, corrigir.
+
+**Lint anti-slop determinístico (sem custo):** rodar `npx impeccable detect <pasta-ou-arquivo>` (ou `npx impeccable detect <url>`) — pega 24 fingerprints de IA (borda lateral em card, gradiente roxo, easing bounce, glow escuro, linha longa demais, padding apertado, touch target pequeno, heading pulado…) sem LLM nem API key. Corrigir o que apontar. Pra revisão de design mais profunda, acionar a skill **`impeccable`** (`/impeccable audit` técnico, `/impeccable critique` de UX, `/impeccable polish` antes de entregar).
 
 ### Passo 5 — Entrega
 Mostrar telas-chave renderizadas. Salvar o projeto na pasta certa. Oferecer `/deploy` pra subir na Vercel.

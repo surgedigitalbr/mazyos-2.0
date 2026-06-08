@@ -76,6 +76,7 @@ Diagnóstico: quantos concorrentes fazem a mesma promessa? O público revira o o
 ## Frameworks de apoio
 
 - **Espinha por consciência:** PAS (consciente do problema) · StoryBrand/AIDA (longo) · oferta-primeiro (mais consciente). No StoryBrand o **cliente é o herói, a marca é o guia**.
+- **Direct response / VSL (long-form, baixa consciência ou venda direta):** Hook (para o scroll na 1ª linha) → Validação do problema ("é frustrante porque…") → **Mecanismo único** (o *como* que ninguém tem — casar com sofisticação 3+) → Solução como consequência natural do mecanismo → Prova empilhada → Quebra de objeção ("você deve estar pensando X… a verdade é Y") → CTA específico → Urgência/escassez **real**. É a espinha de VSL, página de venda longa, e-mail de lançamento e anúncio de resposta direta. Casa com o Dial 1 (quanto menos consciente, mais longa) e o Dial 2 (mecanismo forte quando o mercado já não crê em promessa). Nunca urgência/escassez inventada (ver Guardrails).
 - **Ogilvy:** pesquisa primeiro; uma big idea; headline com benefício + um específico ("a 100 km/h o mais alto é o relógio"). Específico vence adjetivo.
 - **Hopkins:** reason-why (justificar toda promessa); "23 milhões vendidos" > "usado por milhões"; tudo é mensurável.
 - **Halbert:** achar a "multidão faminta" primeiro; escrever pra UMA pessoa; ler em voz alta até soar como fala.

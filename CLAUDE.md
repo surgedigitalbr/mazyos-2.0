@@ -77,6 +77,33 @@ Skills disponíveis (consultar a relevante conforme a intenção):
 - **Comercial:** `/proposta`
 - **Análise:** `/analisar-dados`, `/relatorio-ads`, `/email-profissional`
 
+**Arsenal global instalado (skills externas — usar como CRAFT, não como front-line).**
+As skills MazyOS acima continuam sendo a porta de entrada de toda entrega pro
+cliente (carregam a marca, a regra das duas identidades, o contexto do
+negócio). As skills abaixo são ferramentas de execução que as MazyOS **puxam**
+quando a tarefa pede — o Claude as aciona sozinho pela intenção, sem precisar
+ser mandado, mas nunca deixa elas decidirem marca/cor/identidade:
+
+- **Craft de design/front** (o `/design` orquestra; ver "Arsenal de craft" na skill):
+  `impeccable` (build premium padrão), `taste-skill` (anti-genérico), `redesign-skill`
+  (subir site existente), `soft-skill` (cara de agência cara), `gpt-tasteskill`
+  (efeitos/GSAP fortes), `brutalist-skill`, `minimalist-skill`, `image-to-code-skill`
+  (ver antes de construir), `imagegen-frontend-web`/`-mobile` (referência por seção),
+  `brandkit` (identidade/deck), `output-skill` (código longo sem truncar).
+- **Capacidade de produto** (o `/design`/`/deploy` puxam): `supabase` (auth/Postgres/
+  storage pra SaaS), `supabase-postgres-best-practices` (query/RLS/schema/índices),
+  `stripe` (pagamento/checkout), `vercel-react-best-practices` (performance React/Next:
+  waterfalls, bundle, re-render — puxar ao codar SaaS/Next), `playwright` (QA/teste do
+  site antes de subir).
+- **Documentos** (o `/proposta` e afins puxam): `pdf`, `docx`, `pptx` — proposta,
+  contrato, ebook, slides.
+- **Meta:** `skill-creator` — criar/testar/melhorar skills (usar quando for evoluir
+  o próprio MazyOS).
+
+Regra anti-conflito: nunca usar uma skill externa de **copy, imagem ou vídeo** no
+lugar de `/copy`, `/gerar-imagem` ou `/reels` — essas carregam contexto do negócio
+e não devem ser substituídas pela versão genérica.
+
 Ao concluir uma tarefa que não tinha skill mas parece repetível (o
 usuário provavelmente vai pedir de novo no futuro), perguntar:
 
