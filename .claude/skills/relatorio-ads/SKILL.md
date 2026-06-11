@@ -19,6 +19,7 @@ Skill que transforma exports brutos das plataformas em relatório executivo que 
 - **Tom de voz:** `_memoria/preferencias.md`
 - **Inputs:** CSVs do Google Ads e/ou Meta Ads Manager. Print também aceito (transcrever)
 - **Histórico:** `marketing/campanhas/relatorios/` (criar se não existir)
+- **Craft externo:** se o cliente tiver GA4, puxar a skill externa `analytics` pra cruzar o gasto/clique com o **comportamento no site depois do clique** (conversão interna, tempo na página, abandono). Relatório só de "quanto gastei" perde a metade da história — o que importa é o que o tráfego fez ao chegar.
 
 ---
 

@@ -19,6 +19,7 @@ Skill que monta a campanha inteira em CSV pronto pra importar no Google Ads Edit
 - **Tom de voz:** `_memoria/preferencias.md`
 - **Pesquisa SEO (se existir):** `marketing/seo/01-pesquisa-demanda.md`, `06-google-ads.md` — usar como insumo
 - **Outputs vão em:** `marketing/campanhas/google-ads-<YYYY-MM-DD>/`
+- **Craft externo:** antes da campanha ir ao ar, puxar a skill externa `analytics` pra garantir o **tracking de conversão** configurado (clique no WhatsApp, envio de formulário, ligação) via GTM/GA4. Sem evento de conversão, o Google não consegue otimizar — a campanha gasta no escuro.
 
 ---
 

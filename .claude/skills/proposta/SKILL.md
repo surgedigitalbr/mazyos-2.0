@@ -19,6 +19,10 @@ A proposta sai com a cara da **Surge Digital**, não do cliente. É a peça que 
 - **Contexto do cliente:** `_memoria/empresa.md`, `_memoria/estrategia.md` (a brecha, de `/briefing-cliente`).
 - **Formato flexível:** geralmente um `index.html` estilizado (A4) que você salva como PDF, ou PDF direto via Playwright — o que ficar melhor pro caso. Sempre com **CAPA**.
 - **Saída:** `propostas/<cliente>-<YYYY-MM-DD>.{html,pdf}`.
+- **Craft externo a puxar pela tarefa** (a `/proposta` lidera; essas dão profundidade):
+  - `pricing` — quando o "Investimento" tiver múltiplos pacotes ou modelo de preço a validar (ancoragem, value metric, mensal × anual): estruturar o preço antes de escrever a oferta.
+  - `sales-enablement` — quando o cliente for da Surge e a venda precisar de material de apoio (one-pager, quebra de objeção, talk track) além do PDF.
+  - `pptx` / `pdf` — pra gerar o deck do pitch de call (abordagem 3) ou exportar o documento final com qualidade.
 
 ## As três abordagens (perguntar qual, se não estiver claro)
 

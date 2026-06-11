@@ -17,6 +17,7 @@ Do roteiro ao vídeo pronto pra postar, em 9:16, < 30s.
 - **Contexto/tom:** `_memoria/empresa.md`, `_memoria/preferencias.md`.
 - **Marca do cliente:** `identidade/design-guide.md` (cores/fonte aplicadas nas legendas).
 - **Copy:** roteiro segue a lógica de `/copy` (hook, consciência do público).
+- **Craft externo:** o `/reels` produz **um** vídeo. Quando o pedido for a estratégia de conteúdo em vídeo (pauta, frequência, série, pilares pra TikTok/Shorts/Reels ao longo do tempo), puxar a skill externa `content-strategy` — ela monta o plano, o `/reels` executa cada peça.
 
 ## Modelos (qual pra quê)
 

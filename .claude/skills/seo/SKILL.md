@@ -19,6 +19,10 @@ description: >
 - **Estratégia atual:** `_memoria/estrategia.md`
 - **Ferramentas:** WebSearch, WebFetch (nativos)
 - **Outputs vão em:** `marketing/seo/`
+- **Craft externo a puxar pela tarefa** (a `/seo` lidera; essas afinam):
+  - `schema` — implementar dados estruturados/JSON-LD (FAQ, Product, LocalBusiness, Organization) no Passo 4 (on-page) e no GEO.
+  - `competitors` / `competitor-profiling` — quando o Passo 2 (concorrência) virar páginas "vs"/"alternativa" ou um dossiê de concorrente.
+  - `site-architecture` — quando o site precisar de planejamento de hierarquia de páginas, navegação e linkagem interna (antes de produzir conteúdo).
 
 ---
 

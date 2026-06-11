@@ -19,6 +19,11 @@ Leva o projeto do local pro ar. Padrão: GitHub → Vercel (push-to-deploy) → 
 
 ## Workflow
 
+### Passo 0 — Tirar onda antes de subir (puxar craft)
+Antes do build de produção:
+- **Se for Next.js/React:** puxar a skill externa `vercel-react-best-practices` pra auditar performance (waterfalls, bundle, re-render, ISR/Server Components, Image Optimization). Subir sem otimizar é deixar dinheiro na mesa.
+- **QA:** puxar `playwright-cli` pra testar os fluxos críticos (formulário envia, checkout abre, links não quebram) **antes** de virar produção, não depois.
+
 ### Passo 1 — Build local
 Detectar o framework. Astro → `astro build` (saída `dist/`). Next.js → `next build`. Conferir que builda sem erro antes de subir.
 

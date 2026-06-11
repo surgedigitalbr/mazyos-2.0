@@ -21,6 +21,7 @@ Skill orquestradora. Pega um tema → entrega artigo no blog + carrossel + 3 leg
 - **Site (blog):** `site/` — destino dos artigos. Estrutura comum: Astro em `site/astro-site/src/content/blog/`, ou WordPress, ou outro. Se ainda não tiver site, perguntar antes
 - **Tom de voz:** `_memoria/preferencias.md`
 - **Contexto:** `_memoria/empresa.md`, `identidade/design-guide.md`
+- **Craft externo:** esta skill executa **um** tema. Quando ainda não existe a lista mestra de temas (sem `05-estrategia-conteudo.md` do `/seo`) ou o pedido é "planejar o conteúdo inteiro" — pilares, calendário, frequência, consistência entre temas — puxar a skill externa `content-strategy` pra montar o plano editorial antes; aqui você produz tema a tema.
 
 ---
 

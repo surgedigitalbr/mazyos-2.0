@@ -50,6 +50,8 @@ Proposta de ataque: [1-2 frases — o que a Surge faz primeiro]
 ```
 Oferecer o próximo passo: `/proposta` (montar oferta), `/design` (já começar um modelo), ou `/seo`/`/carrossel` conforme a brecha.
 
+**Craft externo:** se a call deixou o **público-alvo raso** (não ficou claro quem compra, qual a dor real, que linguagem usa), puxar a skill externa `customer-research` pra aprofundar (mineração de reviews, fóruns, concorrentes) **antes** de gerar copy/design/carrossel — VoC sólida é o que separa entrega genérica de entrega que converte. Pra posicionamento/ICP estruturado, há também `product-marketing`.
+
 ## Regras
 
 - Não inventar — registrar só o que está na transcrição. O que for dedução sua, marcar como hipótese.

@@ -22,6 +22,7 @@ A "estrutura invisível" que faz texto vender são os **dois diais do Eugene Sch
 - **Cliente:** transcrição da call / briefing (`/briefing-cliente`) — fonte de Voz do Cliente (VoC).
 - **SEO:** `marketing/seo/` quando existir (keyword/entidade da página).
 - **Design:** quando a copy é pra uma tela, alinhar com `/design` (a copy preenche a estrutura, não o contrário).
+- **Craft de conversão:** quando a peça é uma página/landing/form que precisa **converter** (não só ler bem), puxar a skill externa `cro` pra otimizar estrutura, hierarquia e atrito do funil — a copy entra dentro do diagnóstico de conversão dela. A `/copy` lidera o texto; a `cro` afina a página em volta dele.
 
 ---
 

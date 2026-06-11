@@ -108,6 +108,8 @@ Nunca clonar 1:1 um site existente de terceiro. Inspiração estrutural, identid
 
 Raciocinar a partir do que o negócio precisa: vitrine ou ferramenta com login? orçamento? quem vai manter? o cliente já tem WordPress? Em dúvida, propor uma opção com o porquê e deixar o usuário decidir — ele coordena.
 
+**Craft de produto (puxar quando for SaaS/app/loja com backend):** o `/design` cuida da interface; a camada funcional delega pras skills de craft já instaladas — `supabase` (auth, Postgres, storage, RLS, realtime), `supabase-postgres-best-practices` (schema, query, índices), `stripe-best-practices` (checkout, assinatura, billing). Acionar **em paralelo** com a construção da tela: a UI sem o backend é maquete; o backend sem a UI é API crua. Segredos/chaves dessas integrações vão no `.env` local, nunca no repo (ver regra de segredos no `CLAUDE.md`).
+
 ---
 
 ## Workflow

@@ -20,6 +20,7 @@ Skill central de criação de conteúdo visual. Pega um tema → entrega HTMLs e
 - **Playwright:** pra renderizar HTML em PNG (`npx playwright screenshot` ou via `render.js`)
 - **OpenAI API (opcional):** pra gerar fotos realistas — só se o cliente tiver chave configurada
 - **Outputs vão em:** `marketing/conteudo/<tipo>-<tema>-<YYYY-MM-DD>/`
+- **Craft externo:** esta skill **executa** um post de cada vez. Quando o pedido for o plano editorial inteiro (que temas postar, em que frequência, por quanto tempo, pilares de conteúdo), puxar a skill externa `content-strategy` pra montar o calendário — ela orquestra, o `/carrossel` produz. Pra vídeo/movimento, é `/reels`, não aqui.
 
 ---
 
